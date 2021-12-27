@@ -1,0 +1,4 @@
+[submodule "lib.js"]
+	path = lib.js
+	url = https://github.com/mattaze/lib.js.git
+	branch = main
