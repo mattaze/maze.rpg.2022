@@ -8,6 +8,12 @@ function KeyPressTrigger(event) {
     }
 }
 
+function MenuClicked(event) {
+    if(event.target.dataset.action){
+        Menu.ActionSelected(event.target);
+    }
+}
+
 var KeyTriggers = {
     up: function () {
         Menu.Move(-1);
@@ -45,8 +51,15 @@ var Menu = {
         }
         menu.children[index].classList.add("selected");
     },
-    ActionSelected: function () {
+    ActionSelected: function (selected_elm) {
         //get selected
+        if(!selected_elm) {
+            selected_elm = document.querySelector("#actions .selected");
+        }
         // data-action   data-value
+        if(selected_elm) {
+            console.log(selected_elm.dataset.action + "  " + selected_elm.dataset.value);
+            //lib.getValue(selected_elm.dataset.action , document) ???
+        }
     }
 };

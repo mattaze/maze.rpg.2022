@@ -5,4 +5,7 @@
 
 document.addEventListener("DOMContentLoaded", function(event) {
     document.addEventListener("keydown", KeyPressTrigger);
+    document.body.addEventListener("click", MenuClicked);
+
+    //Menu.MainMenu();
 });

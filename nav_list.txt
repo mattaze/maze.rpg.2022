@@ -1,0 +1,12 @@
+
+
+Battle -
+    Attack - list attack, and use
+    Items - list items, and use
+    Monsters - list monsters, and switch
+    Run
+
+
+Items - List, action(info, use)
+
+Monsters - List, action(info, switch out)
